@@ -75,6 +75,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Used the following instructions to get a simple docker container running [Dockerizing ReactJS application in Ubuntu](https://medium.com/codingtown/how-to-build-a-docker-image-and-run-react-application-via-docker-in-linux-f4eb1115c7c9)
 
-Use `docker pull  pleasewait/elusis-docker` to get the docker image
+Use `docker pull pleasewait/eleusis-docker` to get the docker image
 
-Use `docker run react-docker npm start` to start running the docker container
+Use `docker run eleusis-docker npm start` to start running the docker container
