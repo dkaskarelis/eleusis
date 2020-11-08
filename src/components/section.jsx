@@ -3,12 +3,17 @@ import ReactDom from "react-dom";
 
 class Section extends Component {
   state = {
-  	content: null
+  	content: null,
+  	sectionID: null,
+  	theme: null
+
   }
 
   constructor(props) {
   	super(props);
   	this.state.content = props.content;
+  	this.state.sectionID = props.sectionID;
+  	this.state.theme = props.theme;
   }
 
   render() {
@@ -19,10 +24,10 @@ class Section extends Component {
 
   renderSection() {
     return (
-      <div className="section fp-section">
-        <p>
+      <div className={"row min-vh-100 " + this.state.theme} id={this.state.sectionID}>
+        <h1>
           {this.state.content}
-        </p>
+        </h1>
       </div>
     );
   }

@@ -1,13 +1,9 @@
-import fullpage from 'fullpage.js';
-//import 'fullpage.js/dist/fullpage.min.js';
-//import 'fullpage.js/dist/fullpage.min.css';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Section from './components/section';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.render(

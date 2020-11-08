@@ -1,54 +1,31 @@
 import React, {Component} from "react";
-import logo from './logo.svg';
 import './App.css';
 import Section from './components/section';
+import Menu from './components/menu';
 
 
 class App extends Component {
 render() {
   return (
-    <div id="fullpage">
-      <Section content={"passing content as argument"}/>
-      <Section content={"Another dynamic section"}/>
-      <Section content={"Booooring"}/>
-      <div className="section">
-        <div className="slide"> Slide 1 </div>
-        <div className="slide"> Slide 2 </div>
-        <div className="slide"> Slide 3 </div>
-        <div className="slide"> Slide 4 </div>
-      </div>
-      <div className="section">
-        <p>
-          This is the second section
-        </p>
-      </div>    
-      <div className="section">
-        <p>
-          This is the third section
-        </p>
-      </div>
-      <div className="section">
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-           <a
-             className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            Learn React
-            </a>
-          </header>
-        </div>
-      </div>
+    <div id="fullpage" className="container">
+      <Menu />
+      <Section 
+        content="passing content as argument" 
+        sectionID="foo" 
+        theme="bg-dark" 
+      />
+      <Section 
+        content="Another dynamic section" 
+        sectionID="bar" 
+        theme="bg-primary" 
+      />
+      <Section 
+        content="Booooring" 
+        sectionID="zed"
+        theme="bg-warning" 
+      />
     </div>
-
-    
-  );
-}
+    );
+  }
 }
 export default App;
