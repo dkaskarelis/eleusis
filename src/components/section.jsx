@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import ReactDom from "react-dom";
+import Container from 'react-bootstrap/Container';
 
 class Section extends Component {
   state = {
@@ -25,7 +26,7 @@ class Section extends Component {
   renderSection() {
     return (
       <div className={"row min-vh-100 " + this.state.theme} id={this.state.sectionID}>
-        <h1>
+        <h1 style={{ color: 'white' }}>
           {this.state.content}
         </h1>
       </div>
