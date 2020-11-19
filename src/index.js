@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import { scrollArrow } from "./components/elements/scrollArrow";
+import ScrollArrow from "./components/elements/scrollArrow";
 
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
@@ -15,7 +15,7 @@ const history = createBrowserHistory();
 ReactDOM.render(
   <Router history={history}>
     <App />
-    <scrollArrow />
+    <ScrollArrow />
   </Router>,
   document.getElementById("root")
 );
