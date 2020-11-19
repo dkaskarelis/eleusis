@@ -5,6 +5,7 @@ import Menu from './components/menu';
 import Container from 'react-bootstrap/Container';
 import ReactDOM from 'react-dom';
 import Logo from './components/logo';
+import ContactForm from './components/contactForm';
 
 class App extends Component {
 render() {
@@ -26,6 +27,11 @@ render() {
         content="Booooring" 
         sectionID="zed"
         theme="bg-warning" 
+      />
+      <Section
+        content={<ContactForm />}
+        sectionID="contact-form"
+        theme="bg-light"
       />
     </Container>
     );
