@@ -5,12 +5,14 @@ import '../App.css';
 
 const ScrollArrow = () =>{
 
+  var theOffset = 100;
+
   const [showScroll, setShowScroll] = useState(false)
 
   const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 400){
+    if (!showScroll && window.pageYOffset > theOffset){
       setShowScroll(true)
-    } else if (showScroll && window.pageYOffset <= 400){
+    } else if (showScroll && window.pageYOffset <= theOffset){
       setShowScroll(false)
     }
   };
