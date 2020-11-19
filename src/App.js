@@ -27,7 +27,6 @@ render() {
         sectionID="zed"
         theme="bg-warning" 
       />
-      <FaArrowCircleUp />
     </Container>
     );
   }
