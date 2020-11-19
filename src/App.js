@@ -4,11 +4,13 @@ import Section from './components/section';
 import Menu from './components/menu';
 import Container from 'react-bootstrap/Container';
 import ReactDOM from 'react-dom';
+import Logo from './components/logo';
 
 class App extends Component {
 render() {
   return (
       <Container fluid bsPrefix>
+      <Logo />
       <Menu />
       <Section 
         content="passing content as argument" 
