@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React, {Component} from "react";
 import './App.css';
+import Section from './components/section';
+import Menu from './components/menu';
+import Container from 'react-bootstrap/Container';
+import ReactDOM from 'react-dom';
+import {FaArrowCircleUp} from 'react-icons/fa';
+import {useState} from 'react';
 
-function App() {
+class App extends Component {
+render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <Container fluid bsPrefix>
+      <Menu />
+      <Section 
+        content="passing content as argument" 
+        sectionID="foo" 
+        theme="bg-dark" 
+      />
+      <Section 
+        content="Another dynamic section" 
+        sectionID="bar" 
+        theme="bg-primary" 
+      />
+      <Section 
+        content="Booooring" 
+        sectionID="zed"
+        theme="bg-warning" 
+      />
+      <FaArrowCircleUp />
+    </Container>
+    );
+  }
 }
-
 export default App;
