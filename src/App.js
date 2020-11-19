@@ -4,8 +4,6 @@ import Section from './components/section';
 import Menu from './components/menu';
 import Container from 'react-bootstrap/Container';
 import ReactDOM from 'react-dom';
-import {FaArrowCircleUp} from 'react-icons/fa';
-import {useState} from 'react';
 
 class App extends Component {
 render() {
@@ -27,7 +25,6 @@ render() {
         sectionID="zed"
         theme="bg-warning" 
       />
-      <FaArrowCircleUp />
     </Container>
     );
   }

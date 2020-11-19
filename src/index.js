@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import FaArrowCircleUp from  "./components/scrollArrow";
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import {ScrollApp} from './components/scrollApp';
-import {useState} from 'react';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <FaArrowCircleUp />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 
