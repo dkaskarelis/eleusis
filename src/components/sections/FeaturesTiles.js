@@ -51,8 +51,9 @@ const FeaturesTiles = ({
     <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
-          {/* Sometext Optional SectionHeader */}
+          {/* Sometext Optional SectionHeader removed for simplicity
           <SectionHeader data={sectionHeader} className="center-content" />
+          */}
           <div className={tilesClasses}>
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">

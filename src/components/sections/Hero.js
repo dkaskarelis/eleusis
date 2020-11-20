@@ -64,7 +64,7 @@ const Hero = ({
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              Elusis <span className="text-color-secondary">Shrooms</span>
+              Eleusis <span className="text-color-secondary">Shrooms</span>
             </h1>
             <div className="container-xs">
               <p

@@ -12,15 +12,16 @@ const Home = () => {
       <Hero className="illustration-section-01" />
       {/* FeaturesTile Some text and then  two rows of icons + some text below*/}
       <FeaturesTiles />
-      {/* FeaturesSplit Some text and then two rows alternating right and left with text an some image*/}
+      {/* FeaturesSplit Some text and then two rows alternating right and left with text an some image
       <FeaturesSplit
         invertMobile
         topDivider
         imageFill
         className="illustration-section-02"
-      />
-      <Testimonial topDivider />
-      <Cta split />
+      />*/}
+      {/* Testimonial makes boxes with "sampletext" in them they look noice ! 
+      <Testimonial topDivider />*/}
+      {/*<Cta split />*/}
     </>
   );
 };
